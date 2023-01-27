@@ -1,0 +1,18 @@
+.loader {
+  display: inline-block;
+  width: 86px;
+  height: 86px;
+}
+.loader__img {
+  width: 100%;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

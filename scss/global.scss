@@ -1,0 +1,112 @@
+// ============= NORMALIZE ============= //
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button,
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+// ============= COLORS ============= //
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --dark-color-16: #161b24;
+  --dark-color-20: #202632;
+  --grey-color-53: #53565b;
+  --grey-color-4f: #4f4f4f;
+  --grey-color-87: #87898e;
+  --grey-color-e5: #e5e5e5;
+  --grey-color-f1: #f1f1f1;
+  --yellow-color-f9: #f9c83b;
+  --yellow-color-f3: #f3c02b;
+  --yellow-color-eb: #ebb825;
+  --green-color-22: #228555;
+  --green-color-1d: #1d6a45;
+  --green-color-1a: #1a583a;
+  --success-color: #45bf32;
+  --danger-color: #e40e0e;
+  --error-color: #e53535;
+  --warning-color: #ff8f27;
+  --info-color: #2db0a1;
+  --primary-color: #636fab;
+  --default-color: #adacac;
+  --success-bg-color: #efffed;
+  --danger-bg-color: #ffeded;
+  --warning-bg-color: #fcf9f7;
+  --info-bg-color: #e7f8f6;
+  --primary-bg-color: #f0f1f8;
+  --default-bg-color: #f2f2f2;
+  --heading-fz-1: 66px;
+  --heading-fz-2: 48px;
+  --heading-fz-3: 36px;
+  --heading-fz-4: 32px;
+  --heading-fz-5: 24px;
+  --heading-fz-6: 20px;
+  --heading-lh-1: 84px;
+  --heading-lh-2: 60px;
+  --heading-lh-3: 44px;
+  --heading-lh-4: 40px;
+  --heading-lh-5: 32px;
+  --heading-lh-6: 26px;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+
+// ============= HEADINGS ============= //
+
+h1 {
+  font-size: var(--heading-fz-1);
+  line-height: var(--heading-lh-1);
+}
+
+h2 {
+  font-size: var(--heading-fz-2);
+  line-height: var(--heading-lh-2);
+}
+
+h3 {
+  font-size: var(--heading-fz-3);
+  line-height: var(--heading-lh-3);
+}
+
+h4 {
+  font-size: var(--heading-fz-4);
+  line-height: var(--heading-lh-4);
+}
+
+h5 {
+  font-size: var(--heading-fz-5);
+  line-height: var(--heading-lh-5);
+}
+h6 {
+  font-size: var(--heading-fz-6);
+  line-height: var(--heading-lh-6);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: var(--grey-color-e5);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

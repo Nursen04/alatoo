@@ -1,0 +1,130 @@
+.modals {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.modal {
+  background: var(--white-color);
+  border-radius: 15px;
+  width: max-content;
+  padding: 24px 32px 32px;
+  color: var(--grey-color-4f);
+  height: max-content;
+}
+.modal .btn {
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+}
+.modal__container {
+  width: 482px;
+}
+.modal__title {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: var(--font-weiht-500);
+  margin-bottom: 32px;
+}
+.modal__alert {
+  color: var(--grey-color-87);
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__form .btn {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modal__label {
+  width: 100%;
+}
+.modal__input {
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 18px 18px;
+  border: 2px solid #dfdfe6;
+  font-size: 14px;
+  line-height: 16px;
+}
+.modal__input::placeholder {
+  color: var(--grey-color-87);
+}
+.modal__cancel {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal__cancel:hover {
+  color: var(--grey-color-87);
+  transition: 0.3s;
+}
+.modal__btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.modal__btns .btn {
+  width: 232px;
+  padding: 20px 0;
+}
+.modal__link {
+  color: var(--blue-color-5b);
+  transition: 0.3s;
+}
+.modal__link:hover {
+  color: inherit;
+  transition: 0.3s;
+}
+.modal.notification-modal {
+  border-radius: 0;
+  text-align: center;
+}
+.modal__icon {
+  margin-bottom: 32px;
+}
+.modal.accept-modal {
+  border-radius: 0;
+}
+.modal.accept-modal .modal__container {
+  max-width: 384px;
+}
+.modal.accept-modal .modal__title {
+  margin-bottom: 8px;
+}
+.modal.accept-modal__alert {
+  margin-bottom: 24px;
+}
+.modal.accept-modal .btn {
+  font-size: 12px;
+  padding: 14px 0;
+}
+.modal.verify-modal .btn {
+  font-size: 14px;
+  padding: 20px 0;
+}
+.modal.thanks-verify-modal .modal__title {
+  margin-bottom: 24px;
+}
+.modal.verify-modal, .modal.thanks-verify-modal, .modal.accept-modal {
+  text-align: center;
+}
+.modal.warning-modal .modal__title {
+  color: var(--warning-color);
+}
+.modal.error-modal .modal__title {
+  color: var(--error-color);
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/alerts.css">
+  <link rel="stylesheet" href="./css/button.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/loader.css">
+  <link rel="stylesheet" href="./css/pagination.css">
+  <title>Main UI KIT</title>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <h5>Pagination</h5>
+    <div class="paginations">
+      <ul class="pagination">
+        <li class="pagination__item"><a class="pagination__link pagination__prev" href="#"></a></li>
+        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+        <li class="pagination__item"><a class="pagination__link pagination__next" href="#"></a></li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination__item"><a class="pagination__link pagination__prev" href="#"></a></li>
+        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+        <li class="pagination__item">
+          <p class="pagination__text">of</p>
+        </li>
+        <li class="pagination__item"><a class="pagination__link" href="#">24</a></li>
+        <li class="pagination__item"><a class="pagination__link pagination__next" href="#"></a></li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination__item"><a class="pagination__link pagination__prev-text" href="#">Prev</a></li>
+        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+        <li class="pagination__item"><a class="pagination__link pagination__next-text" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <h5>loader</h5>
+    <span class="loader"><img class="loader__img" src="./icons/loader.png" alt="Loader-icon"></span>
+
+    <h5>Modal</h5>
+    <div class="modals">
+      <div class="modal forgot-password-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Forgot Your Password?</h5>
+          <p class="modal__alert">We will send you a reset link</p>
+          <form action="" class="modal__form">
+            <label class="modal__label"><input type="text" class="modal__input" placeholder="Enter your email"></label>
+            <button class="btn dark-btn">Send</button>
+            <span class="modal__cancel">Cancel</span>
+          </form>
+        </div>
+      </div>
+      <div class="modal verify-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Please Verify Your Email</h5>
+          <p class="modal__alert">We have sent an email to <a class="modal__link" href="#">youremail@email.com</a> for
+            verification</p>
+          <div class="modal__btns">
+            <button class="btn dark-btn">Send again</button>
+            <button class="btn grey-btn">Got it</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal thanks-verify-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Thanks For Verifying!</h5>
+          <p class="modal__alert">Thank you for verifying your email address, You may now proceed to applying for
+            account
+          </p>
+          <button class="btn dark-btn">Login</button>
+        </div>
+      </div>
+      <div class="modal accept-modal">
+        <div class="modal__container">
+          <h6 class="modal__title">Sure you want to accept?</h6>
+          <p class="modal__alert">Are you sure you want to accept this?
+          </p>
+          <div class="modal__btns">
+            <button class="btn outline-btn">No, cancel</button>
+            <button class="btn dark-btn">Yes, Confirm</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal notification-modal warning-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Warning Message</h5>
+          <div class="modal__icon"><img src="./icons/modal/warning-icon.svg" alt="Warning-icon"></div>
+          <p class="modal__alert">Warning message</p>
+          <button class="btn dark-btn">Got it</button>
+        </div>
+      </div>
+      <div class="modal notification-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Success Message</h5>
+          <div class="modal__icon"><img src="./icons/modal/success-icon.svg" alt="Success-icon"></div>
+          <p class="modal__alert">Success message</p>
+          <button class="btn dark-btn">Got it</button>
+        </div>
+      </div>
+      <div class="modal notification-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Changing Password</h5>
+          <div class="modal__icon"><img src="./icons/modal/success-icon.svg" alt="Success-icon"></div>
+          <p class="modal__alert">WYour password change does successfully</p>
+          <button class="btn dark-btn">Got it</button>
+        </div>
+      </div>
+      <div class="modal notification-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Info Message</h5>
+          <div class="modal__icon"><img src="./icons/modal/info-icon.svg" alt="Info-icon"></div>
+          <p class="modal__alert">Info message</p>
+          <button class="btn dark-btn">Got it</button>
+        </div>
+      </div>
+      <div class="modal notification-modal error-modal">
+        <div class="modal__container">
+          <h5 class="modal__title">Error Message</h5>
+          <div class="modal__icon"><img src="./icons/modal/error-icon.svg" alt="Error-icon"></div>
+          <p class="modal__alert">Error Description</p>
+          <button class="btn dark-btn">Got it</button>
+        </div>
+      </div>
+    </div>
+
+    <h5>Button</h5>
+    <div class="btns">
+
+      <button class="btn">button</button>
+      <button class="btn yellow-btn">button</button>
+      <button class="btn green-btn">button</button>
+      <button class="btn dark-btn">button</button>
+      <button class="btn outline-btn">button</button>
+      <button class="btn dark-btn" style="padding: 18px 120px;"><span class="btn__icon"></span> button</button>
+      <button class="btn grey-btn">button</button>
+
+    </div>
+
+    <h5>Alert</h5>
+    <div class="alerts">
+
+      <div class="alert success-alert">
+        <h5 class="alert__title">Success!</h5>
+        <p class="alert__text">This is a success alert—check it out!</p>
+      </div>
+      <div class="alert danger-alert">
+        <h5 class="alert__title">Danger!</h5>
+        <p class="alert__text">This is a danger alert—check it out!</p>
+      </div>
+      <div class="alert warning-alert">
+        <h5 class="alert__title">Warning!</h5>
+        <p class="alert__text">This is a warning alert—check it out!</p>
+      </div>
+      <div class="alert info-alert">
+        <h5 class="alert__title">Info!</h5>
+        <p class="alert__text">This is a info alert—check it out!</p>
+      </div>
+      <div class="alert primary-alert">
+        <h5 class="alert__title">Primary!</h5>
+        <p class="alert__text">This is a primary alert—check it out!</p>
+      </div>
+      <div class="alert default-alert">
+        <h5 class="alert__title">Default!</h5>
+        <p class="alert__text">This is a primary alert—check it out!</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
