@@ -12,46 +12,221 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/alerts.css">
-  <link rel="stylesheet" href="./css/button.css">
   <link rel="stylesheet" href="./css/modal.css">
   <link rel="stylesheet" href="./css/loader.css">
   <link rel="stylesheet" href="./css/pagination.css">
+  <link rel="stylesheet" href="./css/breadcrumb.css">
+  <link rel="stylesheet" href="./css/tabel.css">
+  <link rel="stylesheet" href="./css/button.css">
   <title>Main UI KIT</title>
-
 </head>
 
 <body>
   <div class="container">
+    <h5>Checkbox</h5>
+
+    <div class="checkboxes">
+      <label class="checkbox-label">
+        <input class="checkbox" type="checkbox">
+        <span class="checkbox-two"></span>
+      </label>
+      <label class="checkbox-label">
+        <input class="checkbox" type="checkbox">
+        <span class="checkbox-two"></span>
+      </label>
+      <label class="checkbox-label">
+        <input class="checkbox" type="checkbox">
+        <span class="checkbox-two"></span>
+      </label>
+      <label class="checkbox-label">
+        <input class="checkbox" type="checkbox">
+        <span class="checkbox-two"></span>
+      </label>
+    </div>
+
+    <h5>Expample Text Area</h5>
+    <textarea class="textarea" placeholder="Text area"></textarea>
+    <h5>Button</h5>
+    <div class="btns">
+      <button class="btn">button</button>
+      <button class="btn yellow-btn">button</button>
+      <button class="btn green-btn">button</button>
+      <button class="btn dark-btn">button</button>
+      <button class="btn outline-btn">button</button>
+      <button class="btn dark-btn" style="padding: 18px 120px;"><span class="btn__icon"></span> button</button>
+      <button class="btn grey-btn">button</button>
+    </div>
+    <h5>Tables</h5>
+    <div class="tabels">
+      <table class="tabel">
+        <thead class="tabel__head">
+          <tr class="tabel__row">
+            <th><span class="tabel__head-text">Name</span></th>
+            <th><span class="tabel__head-text">Email</span></th>
+            <th><span class="tabel__head-text">Phone number</span></th>
+            <th><span class="tabel__head-text">Gender</span></th>
+          </tr>
+        </thead>
+        <tbody class="tabel__body">
+          <tr class="tabel__row">
+            <td class="tabel__td">
+              <img class="tabel__img" src="./img/users/user-1.svg" alt="user-img">
+              <p class="tabel__text">John Deo</p>
+            </td>
+            <td>
+              <a class="tabel__text" href="mailto:johndoe2211@gmail.com">johndoe2211@gmail.com</a>
+            </td>
+            <td>
+              <a class="tabel__text" href="#">+33757005467</a>
+            </td>
+            <td>
+              <span class="tabel__gender man">Man</span>
+              <span class="tabel__menu"><img src="./icons/dot-menu-icon.svg" alt="Icon"></span>
+            </td>
+          </tr>
+          <tr class="tabel__row">
+            <td class="tabel__td">
+              <img class="tabel__img" src="./img/users/user-2.svg" alt="user-img">
+              <p class="tabel__text">Shelby Goode</p>
+            </td>
+            <td>
+              <a class="tabel__text" href="mailto:johndoe2211@gmail.com">shelbygoode41@gmail.com</a>
+            </td>
+            <td>
+              <a class="tabel__text" href="#">+33757005467</a>
+            </td>
+            <td>
+              <span class="tabel__gender woomen">Woomen</span>
+              <span class="tabel__menu"><img src="./icons/dot-menu-icon.svg" alt="Icon"></span>
+
+            </td>
+          </tr>
+          <tr class="tabel__row">
+            <td class="tabel__td">
+              <img class="tabel__img" src="./img/users/user-3.svg" alt="user-img">
+              <p class="tabel__text">Robert Bacins</p>
+            </td>
+            <td>
+              <a class="tabel__text" href="mailto:johndoe2211@gmail.com">robertbacins4182@.com</a>
+            </td>
+            <td>
+              <a class="tabel__text" href="#">+33757005467</a>
+            </td>
+            <td>
+              <span class="tabel__gender man">Man</span>
+              <span class="tabel__menu"><img src="./icons/dot-menu-icon.svg" alt="Icon"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h5>Breadcrumb</h5>
+    <div class="breadcrumbs">
+      <div>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-big">
+            <li class="breadcrumb__item active">Home</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-big">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item active">Catalog</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-big">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Library</a></li>
+            <li class="breadcrumb__item active">Our products</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-medium">
+            <li class="breadcrumb__item active">Home</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-medium">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item active">Catalog</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-medium">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Library</a></li>
+            <li class="breadcrumb__item active">Our products</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-small">
+            <li class="breadcrumb__item active">Home</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-small">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item active">Catalog</li>
+          </ul>
+        </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb breadcrumb-small">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Library</a></li>
+            <li class="breadcrumb__item active">Our products</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <h5>Pagination</h5>
     <div class="paginations">
-      <ul class="pagination">
-        <li class="pagination__item"><a class="pagination__link pagination__prev" href="#"></a></li>
-        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
-        <li class="pagination__item"><a class="pagination__link pagination__next" href="#"></a></li>
-      </ul>
-      <ul class="pagination">
-        <li class="pagination__item"><a class="pagination__link pagination__prev" href="#"></a></li>
-        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
-        <li class="pagination__item">
-          <p class="pagination__text">of</p>
-        </li>
-        <li class="pagination__item"><a class="pagination__link" href="#">24</a></li>
-        <li class="pagination__item"><a class="pagination__link pagination__next" href="#"></a></li>
-      </ul>
-      <ul class="pagination">
-        <li class="pagination__item"><a class="pagination__link pagination__prev-text" href="#">Prev</a></li>
-        <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
-        <li class="pagination__item"><a class="pagination__link pagination__next-text" href="#">Next</a></li>
-      </ul>
+
+      <nav aria-label="pagination">
+        <ul class="pagination">
+          <li class="pagination__item"><a class="pagination__link" href="#"><span class="pagination__prev"></span></a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#"><span class="pagination__next"></span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="pagination">
+        <ul class="pagination">
+          <li class="pagination__item"><a class="pagination__link" href="#"><span class="pagination__prev"></span></a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+          <li class="pagination__item">
+            <p class="pagination__text">of</p>
+          </li>
+          <li class="pagination__item"><a class="pagination__link" href="#">24</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#"><span class="pagination__next"></span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="pagination">
+        <ul class="pagination">
+          <li class="pagination__item"><a class="pagination__link pagination__prev-text" href="#">Prev</a></li>
+          <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+          <li class="pagination__item"><a class="pagination__link pagination__next-text" href="#">Next</a></li>
+        </ul>
+      </nav>
     </div>
 
     <h5>loader</h5>
@@ -143,19 +318,6 @@
       </div>
     </div>
 
-    <h5>Button</h5>
-    <div class="btns">
-
-      <button class="btn">button</button>
-      <button class="btn yellow-btn">button</button>
-      <button class="btn green-btn">button</button>
-      <button class="btn dark-btn">button</button>
-      <button class="btn outline-btn">button</button>
-      <button class="btn dark-btn" style="padding: 18px 120px;"><span class="btn__icon"></span> button</button>
-      <button class="btn grey-btn">button</button>
-
-    </div>
-
     <h5>Alert</h5>
     <div class="alerts">
 
@@ -182,6 +344,60 @@
       <div class="alert default-alert">
         <h5 class="alert__title">Default!</h5>
         <p class="alert__text">This is a primary alert—check it out!</p>
+      </div>
+      <div class="alert success-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/check.svg" alt="Success-icon"></div>
+          <div>
+            <h5 class="alert__title">Success!</h5>
+            <p class="alert__text">This is a success alert—check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert danger-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/priority.svg" alt="Danger-icon"></div>
+          <div>
+            <h5 class="alert__title">Danger!</h5>
+            <p class="alert__text">This is a danger alert—check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert warning-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/warning.svg" alt="Warning-icon"></div>
+          <div>
+            <h5 class="alert__title">Warning!</h5>
+            <p class="alert__text">This is a warning alert—check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert info-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/info.svg" alt="Info-icon"></div>
+          <div>
+            <h5 class="alert__title">Info!</h5>
+            <p class="alert__text">This is a info alert—check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert primary-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/primary.svg" alt="Primary-icon"></div>
+          <div>
+            <h5 class="alert__title">Primary!</h5>
+            <p class="alert__text">This is a primary alert—check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert default-alert">
+        <div class="alert__content">
+          <div class="alert__icon"><img src="./icons/alert/default.svg" alt="Default-icon"></div>
+          <div>
+            <h5 class="alert__title">Default!</h5>
+            <p class="alert__text">This is a primary alert—check it out!</p>
+          </div>
+        </div>
       </div>
     </div>
 

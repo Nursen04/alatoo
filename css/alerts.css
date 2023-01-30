@@ -35,6 +35,19 @@
   border-left: 6px solid var(--default-color);
   background-color: var(--default-bg-color);
 }
+.alert__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.alert__icon {
+  width: 56px;
+  height: 56px;
+  margin-right: 25px;
+}
+.alert__icon img {
+  width: 100%;
+}
 .alert__title {
   margin-bottom: 20px;
 }

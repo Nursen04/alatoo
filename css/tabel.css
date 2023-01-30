@@ -1,0 +1,73 @@
+.tabels {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tabel {
+  border-collapse: collapse;
+  border: 1px solid var(--grey-color-db);
+}
+.tabel__head {
+  background: var(--grey-color-e5);
+}
+.tabel__body {
+  background: var(--white-color);
+}
+.tabel__row {
+  border-bottom: 1px solid var(--grey-color-db);
+}
+.tabel td,
+.tabel th {
+  padding: 15px 20px;
+  text-align: left;
+}
+.tabel__td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tabel__img {
+  margin-right: 11px;
+}
+.tabel__head-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.tabel__head-text::after {
+  content: url(../icons/arrows/arrow-down.svg);
+  position: absolute;
+  right: 0;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tabel__text {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.tabel__gender {
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 33px;
+}
+.tabel__gender.man {
+  padding: 4px 18px;
+  background: var(--man-color-bg);
+  color: var(--man-color);
+  margin-right: 40px;
+}
+.tabel__gender.woomen {
+  padding: 4px 8px;
+  background: var(--woomen-color-bg);
+  color: var(--woomen-color);
+  margin-right: 32px;
+}
+.tabel__menu {
+  cursor: pointer;
+}
+.tabel__menu img {
+  margin-bottom: 4px;
+}

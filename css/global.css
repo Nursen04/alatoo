@@ -20,6 +20,10 @@ ol {
 }
 
 :root {
+  --man-color-bg: #5B93FF1a;
+  --man-color: #5B93FF;
+  --woomen-color-bg: #FF8F6B1a;
+  --woomen-color: #FF8F6B;
   --black-color: #000000;
   --white-color: #ffffff;
   --dark-color-16: #161b24;
@@ -27,8 +31,8 @@ ol {
   --grey-color-53: #53565b;
   --grey-color-4f: #4f4f4f;
   --grey-color-87: #87898e;
-  --grey-color-bc: #bcbcbc;
   --grey-color-e5: #e5e5e5;
+  --grey-color-db: #DBDBE4;
   --grey-color-f1: #f1f1f1;
   --yellow-color-f9: #f9c83b;
   --yellow-color-f3: #f3c02b;

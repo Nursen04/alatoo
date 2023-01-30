@@ -1,0 +1,72 @@
+.tabels {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.tabel {
+  border-collapse: collapse;
+  border: 1px solid var(--grey-color-db);
+  &__head {
+    background: var(--grey-color-e5);
+  }
+  &__body {
+    background: var(--white-color);
+  }
+  &__row {
+    border-bottom: 1px solid var(--grey-color-db);
+  }
+  td,
+  th {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  &__td {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__img {
+    margin-right: 11px;
+  }
+  &__head-text {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    position: relative;
+    &::after {
+      content: url(../icons/arrows/arrow-down.svg);
+      position: absolute;
+      right: 0;
+      right: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+  &__gender {
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 33px;
+    &.man {
+      padding: 4px 18px;
+      background: var(--man-color-bg);
+      color: var(--man-color);
+      margin-right: 40px;
+    }
+    &.woomen {
+      padding: 4px 8px;
+      background: var(--woomen-color-bg);
+      color: var(--woomen-color);
+      margin-right: 32px;
+    }
+  }
+  &__menu {
+    cursor: pointer;
+    img {
+      margin-bottom: 4px;
+    }
+  }
+}
