@@ -26,6 +26,7 @@
   line-height: 22px;
   font-weight: 800;
   transition: 0.2s;
+  cursor: pointer;
 }
 .pagination__link:hover {
   border: 1px solid var(--yellow-color-f9);
@@ -74,4 +75,54 @@
 }
 .pagination__prev-text:hover, .pagination__next-text:hover {
   border: none;
+}
+
+.slider-btn {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--dark-color-20);
+  color: var(--dark-color-20);
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.slider-btn:hover {
+  border: 1px solid var(--yellow-color-f9);
+  color: var(--yellow-color-f9);
+  transition: 0.2s;
+}
+.slider-btn.active {
+  border: 1px solid var(--yellow-color-f9);
+  color: var(--dark-color-20);
+  background: var(--yellow-color-f9);
+  font-weight: 500;
+}
+.slider-btn.active:hover {
+  border: 1px solid var(--yellow-color-f9);
+  color: var(--dark-color-20);
+  background: var(--yellow-color-f9);
+}
+.slider-btn.slider-btn-prev::after {
+  content: url(../icons/arrows/arrow-prev-dark.svg);
+}
+.slider-btn.slider-btn-prev:hover {
+  background: none;
+}
+.slider-btn.slider-btn-prev:hover::after {
+  content: url(../icons/arrows/arrow-prev-yellow.svg);
+}
+.slider-btn.slider-btn-next::after {
+  content: url(../icons/arrows/arrow-next-dark.svg);
+}
+.slider-btn.slider-btn-next:hover {
+  background: none;
+}
+.slider-btn.slider-btn-next:hover::after {
+  content: url(../icons/arrows/arrow-next-yellow.svg);
 }

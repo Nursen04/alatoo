@@ -1,0 +1,65 @@
+.header {
+  padding: 44px 0;
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__burger {
+    width: 20px;
+    height: 8px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 32px;
+    &::after,
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      border-radius: 1px;
+      background: var(--dark-color-20);
+      position: absolute;
+      left: 0;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 1px;
+    }
+  }
+  &__lang-text {
+    position: relative;
+    &::after {
+      content: url(../icons/arrows/outline-arrow-down.svg);
+      top: -5px;
+      right: -22px;
+      position: absolute;
+    }
+  }
+  &__lang-dropdown {
+    display: none;
+  }
+  &__logo {
+    transform: translateX(57%);
+  }
+  &__reg-and-log {
+    margin-right: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+  &__link {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

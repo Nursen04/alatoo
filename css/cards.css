@@ -1,0 +1,41 @@
+.min-card__img-block {
+  width: 100%;
+  padding: 52px 40px;
+  background: var(--white-color-f8);
+}
+.min-card__img-block img {
+  width: 100%;
+}
+.min-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 15px;
+}
+.min-card__title {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.min-card__price {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.min-card__old-price {
+  font-weight: 400;
+  color: var(--grey-color-99);
+  margin-right: 13px;
+}
+.min-card__btn {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  padding: 15px 0;
+  width: 100%;
+  opacity: 0.2;
+  font-weight: 700;
+}
+.min-card__btn:hover {
+  opacity: 1;
+}

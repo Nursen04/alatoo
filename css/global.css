@@ -1,38 +1,27 @@
+@import url(../fonts/inter/stylesheet.css);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-button,
-input {
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
 :root {
-  --man-color-bg: #5B93FF1a;
-  --man-color: #5B93FF;
-  --woomen-color-bg: #FF8F6B1a;
-  --woomen-color: #FF8F6B;
+  --man-color-bg: #5b93ff1a;
+  --man-color: #5b93ff;
+  --woomen-color-bg: #ff8f6b1a;
+  --woomen-color: #ff8f6b;
   --black-color: #000000;
   --white-color: #ffffff;
+  --white-color-f8: #f8f8fc;
   --dark-color-16: #161b24;
   --dark-color-20: #202632;
   --grey-color-53: #53565b;
+  --grey-color-58: #5b6068;
   --grey-color-4f: #4f4f4f;
   --grey-color-87: #87898e;
+  --grey-color-99: #999da3;
   --grey-color-e5: #e5e5e5;
-  --grey-color-db: #DBDBE4;
+  --grey-color-db: #dbdbe4;
   --grey-color-f1: #f1f1f1;
   --yellow-color-f9: #f9c83b;
   --yellow-color-f3: #f3c02b;
@@ -71,44 +60,72 @@ ol {
   --font-weight-700: 700;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--dark-color-20);
+}
+
+button,
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: var(--heading-fz-1);
   line-height: var(--heading-lh-1);
+  font-weight: 700;
 }
 
 h2 {
   font-size: var(--heading-fz-2);
   line-height: var(--heading-lh-2);
+  font-weight: 700;
 }
 
 h3 {
   font-size: var(--heading-fz-3);
   line-height: var(--heading-lh-3);
+  font-weight: 700;
 }
 
 h4 {
   font-size: var(--heading-fz-4);
   line-height: var(--heading-lh-4);
+  font-weight: 700;
 }
 
 h5 {
   font-size: var(--heading-fz-5);
   line-height: var(--heading-lh-5);
+  font-weight: 700;
 }
 
 h6 {
   font-size: var(--heading-fz-6);
   line-height: var(--heading-lh-6);
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  background-color: var(--grey-color-e5);
-  font-size: 16px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  font-weight: 700;
 }
